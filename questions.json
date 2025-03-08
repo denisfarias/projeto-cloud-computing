@@ -1,0 +1,31 @@
+{
+    "questions": [
+        {
+            "label": "Quem inventou a fórmula de e=mc²?",
+            "incorrect_answers": [
+                "Kendrick Lamar",
+                "BROCKHAMPTON a melhor boyband do mundo",
+                "Young Thug"
+            ],
+            "correct_answer": "Albert Einstein"
+        },
+        {
+            "label": "1+1=?",
+            "incorrect_answers": [
+                "6",
+                "3",
+                "98"
+            ],
+            "correct_answer": "2"
+        },
+        {
+            "label": "Qual a cor do céu?",
+            "incorrect_answers": [
+                "Vermelho",
+                "Verde",
+                "Rosa"
+            ],
+            "correct_answer": "Azul"
+        }
+    ]
+}
