@@ -1,1 +1,165 @@
 /* PEX computação em nuvem */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #0080FF;
+    --cor-hover: #003366;
+
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: "Montserrat", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho_home{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cabecalho_home img {
+    width: 30px;
+    height: auto;
+    margin-right: 700px;
+}
+
+.cabecalho_link::after{
+    content: "";
+    background-color: var(--cor-terciaria);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.cabecalho_link:hover::after{
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 25px;
+    justify-content: end;
+    padding-right: 100px;
+}
+
+.cabecalho_link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body{
+    /* height: 100vh; */
+    flex-wrap: wrap; /* adicionado */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.quiz{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quiz span {
+    position: relative; 
+    display: inline-block;
+}
+
+.quiz span::after{
+    content: "";
+    background-color: var(--cor-terciaria);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.quiz span:hover::after{
+    width: 100%;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.apresentacao_conteudo{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+    margin-bottom: 70px;
+    margin-top: 90px;
+}
+.apresentacao_conteudo_paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.botao_link{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.0rem;
+    animation: animate-outline 1s ease-out infinite;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: var(--cor-primaria);
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid var(--cor-terciaria);
+    }
+    to{
+        outline: 15px solid var(--cor-hover);
+    }
+}
