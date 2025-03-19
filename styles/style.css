@@ -5,7 +5,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #0080FF;
-    --cor-hover: #003366;
+    --cor-hover: #002345;
 
     --fonte-primaria: "Krona One", serif;
     --fonte-secundaria: "Montserrat", serif;
@@ -18,6 +18,10 @@
 }
 
 body{
+    background-image: url("/assets/Wallpaper.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -150,22 +154,24 @@ body{
     text-align: center;
 }
 
-.apresentacao_conteudo{
+.descricao{
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--fonte-primaria);
 }
 
 .apresentacao_conteudo_titulo{
     font-size: 3rem;
     font-family: var(--fonte-primaria);
-    margin-bottom: 70px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
+
 .apresentacao_conteudo_paragrafo{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
+    margin-top: 35px;
 }
 
 
@@ -309,4 +315,15 @@ button:active::before, button:active::after {
 
   /* ----------------------------- Término da animação ----------------------------- */
 
-  
+  /* RODAPÉ */
+
+  .rodape{
+    margin-top: 53px;
+    padding: 10px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+}
