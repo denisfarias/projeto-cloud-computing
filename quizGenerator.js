@@ -64,8 +64,10 @@ fetch('questions.json')                                         // inicializando
                             showQuestion(currentQuestionIndex); // passa para a próxima questão
                         } else if (correctlyAnsweredQuestions <= 0) {
                             quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
+                        } else if (correctlyAnsweredQuestions = 1) {
+                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questão de ${data.questions.length}.</p>`;
                         } else {
-                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões.</p>`;
+                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões de ${data.questions.length}.</p>`;
                         }
                     }, 900);
                 });
