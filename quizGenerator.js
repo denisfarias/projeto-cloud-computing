@@ -43,14 +43,31 @@ fetch('questions.json')                                         // inicializando
                     if (isCorrect) { correctlyAnsweredQuestions++; }
                     currentQuestionIndex++;
 
-                    // veja se ainda tem questões para responder
-                    if (currentQuestionIndex < data.questions.length) {
-                        showQuestion(currentQuestionIndex); // passa para a próxima questão
-                    } else if (correctlyAnsweredQuestions <= 0) {
-                        quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
-                    } else {
-                        quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões.</p>`;
-                    }
+                    const allInputs = document.querySelectorAll(`input[name='question-${index}']`);
+                    allInputs.forEach(input => input.disabled = true);
+
+                    // trocar o CSS das questões corretas e incorretas
+                    questionContainer.querySelectorAll("label").forEach(l => {
+                        if (l.textContent === question.correct_answer) {
+                            // estilos serão alterados depois
+                            l.style.color = "green"
+                            l.style.fontWeight = "bold"
+                        } else {
+                            l.style.color = "red"
+                        }
+                    })
+
+                    // esperar ~1 segundo após responder a questão
+                    setTimeout(() => {
+                        // veja se ainda tem questões para responder
+                        if (currentQuestionIndex < data.questions.length) {
+                            showQuestion(currentQuestionIndex); // passa para a próxima questão
+                        } else if (correctlyAnsweredQuestions <= 0) {
+                            quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
+                        } else {
+                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões.</p>`;
+                        }
+                    }, 900);
                 });
 
                 answerContainer.appendChild(radio);
