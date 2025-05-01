@@ -1,0 +1,90 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #0080FF;
+    --cor-hover: #002345;
+    --cor-correta: #5AAB35;
+    --cor-incorreta: #EB2525;
+
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: "Montserrat", serif;
+}
+
+body {
+    background-image: url("/assets/Wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+/* === Quiz === */
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    max-width: 600px;
+}
+
+.question p {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.question .answer-container {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    min-width: 600px;
+    box-sizing: border-box;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.question input[type="radio"] {
+    margin-right: 1rem;
+    transform: scale(1.3);
+}
+
+.question label {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.question .answer-container {
+    border: 2px solid var(--cor-secundaria);
+    transition: all 0.3s ease;
+}
+
+.question .answer-container:hover {
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-terciaria);
+}
+
+.question .answer-container.correta {
+    border: 2px solid var(--cor-correta) !important;
+    color: var(--cor-correta);
+    background-color: rgba(90, 171, 53, 0.3);
+}
+
+.question .answer-container.incorreta {
+    border: 2px solid var(--cor-incorreta) !important;
+    color: var(--cor-incorreta);
+    background-color: rgba(235, 37, 37, 0.3);
+}
