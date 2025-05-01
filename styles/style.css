@@ -1,6 +1,7 @@
 /* PEX computação em nuvem */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+<<<<<<< HEAD
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -10,172 +11,181 @@ a, a:visited, a:hover, a:active {
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #0080FF;
     --cor-hover: #002345;
+=======
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #0080FF;
+  --cor-hover: #002345;
+>>>>>>> 69580920206119ddf9b84320d79e0ff923afcf14
 
-    --fonte-primaria: "Krona One", serif;
-    --fonte-secundaria: "Montserrat", serif;
+  --fonte-primaria: "Krona One", serif;
+  --fonte-secundaria: "Montserrat", serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url("/assets/Wallpaper.jpg");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+body {
+  background-image: url("/assets/Wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: var(--cor-primaria);
+  box-sizing: border-box;
+  color: var(--cor-secundaria);
 }
+
 
 /* animação ícone casa */
 
 .cabecalho_home {
-    display: flex;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    justify-content: flex-start;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  justify-content: flex-start;
 }
 
 .cabecalho_home::after {
-    content: "";
-    background-color: var(--cor-terciaria);
-    height: 3px;
-    width: 0%;
-    display: block;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cabecalho_home:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .cabecalho_home img {
-    width: 30px;
-    height: auto;
-    display: inline-block;
+  width: 30px;
+  height: auto;
+  display: inline-block;
 }
 
 /* FIM DA ANIMAÇÃO ÍCONE CASA */
 
-.cabecalho_link::after{
-    content: "";
-    background-color: var(--cor-terciaria);
-    height: 3px;
-    width: 0%;
-    display: block;
-    transition: 0.3s;
-    margin: 0 auto;
+.cabecalho_link::after {
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: 0.3s;
+  margin: 0 auto;
 }
 
-.cabecalho_link:hover::after{
-    width: 100%;
+.cabecalho_link:hover::after {
+  width: 100%;
 }
 
-header{
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.cabecalho{
-    display: flex;
-    padding: 2% 10%;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
+.cabecalho {
+  display: flex;
+  padding: 2% 10%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cabecalho_menu{
-    display: flex;
-    gap: 25px;
-    margin-left: auto;
-    /* padding-right: 100px; */
+.cabecalho_menu {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+  /* padding-right: 100px; */
 }
 
-.cabecalho_link{
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--cor-terciaria);
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    justify-content: end;
+.cabecalho_link {
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  justify-content: end;
 }
 
 
-body{
-    /* height: 100vh; */
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+body {
+  /* height: 100vh; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
-.titulo-destaque{
-    color: var(--cor-terciaria);
+.titulo-destaque {
+  color: var(--cor-terciaria);
 }
 
-.quiz{
-    color: var(--cor-terciaria);
-    text-decoration: none;
-    cursor: pointer;
+.quiz {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .quiz span {
-    position: relative; 
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
-.quiz span::after{
-    content: "";
-    background-color: var(--cor-terciaria);
-    height: 3px;
-    width: 0%;
-    display: block;
-    transition: 0.3s;
-    margin: 0 auto;
+.quiz span::after {
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: 0.3s;
+  margin: 0 auto;
 }
 
-.quiz span:hover::after{
-    width: 100%;
+.quiz span:hover::after {
+  width: 100%;
 }
 
-.apresentacao{
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.descricao{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--fonte-primaria);
+.descricao {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fonte-primaria);
 }
 
-.apresentacao_conteudo_titulo{
-    font-size: 3rem;
-    font-family: var(--fonte-primaria);
-    margin-top: 60px;
+.apresentacao_conteudo_titulo {
+  font-size: 3rem;
+  font-family: var(--fonte-primaria);
+  margin-top: 60px;
 }
 
-.apresentacao_conteudo_paragrafo{
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    margin-top: 35px;
+.apresentacao_conteudo_paragrafo {
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  margin-top: 35px;
 }
 
 
@@ -232,18 +242,17 @@ button:hover span {
 button:active {
   transform: scale(0.95);
 }
+/* ----------------------------- Término da animação ----------------------------- */
 
-  /* ----------------------------- Término da animação ----------------------------- */
+/* RODAPÉ */
 
-  /* RODAPÉ */
-
-  .rodape{
-    margin-top: 53px;
-    padding: 10px;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    font-size: 0.95rem;
-    font-weight: 400;
-    text-align: center;
-    align-items: center;
+.rodape {
+  margin-top: 53px;
+  padding: 10px;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
 }

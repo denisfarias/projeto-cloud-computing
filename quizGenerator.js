@@ -16,7 +16,7 @@ fetch('questions.json')                                         // inicializando
 
             // texto da questão
             const questionLabel = document.createElement("p");
-            questionLabel.textContent = question.label;
+            questionLabel.textContent = `${index + 1}. ${question.label}`;
             questionContainer.appendChild(questionLabel);
 
             // respostas aleatórias
@@ -26,6 +26,7 @@ fetch('questions.json')                                         // inicializando
             // loop pra criar as perguntas
             answers.forEach(answer => {
                 const answerContainer = document.createElement("div");
+                answerContainer.classList.add("answer-container")
 
                 const radio = document.createElement("input");
                 radio.type = "radio";
@@ -43,14 +44,40 @@ fetch('questions.json')                                         // inicializando
                     if (isCorrect) { correctlyAnsweredQuestions++; }
                     currentQuestionIndex++;
 
-                    // veja se ainda tem questões para responder
-                    if (currentQuestionIndex < data.questions.length) {
-                        showQuestion(currentQuestionIndex); // passa para a próxima questão
-                    } else if (correctlyAnsweredQuestions <= 0) {
-                        quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
+                    const allInputs = document.querySelectorAll(`input[name='question-${index}']`);
+                    allInputs.forEach(input => input.disabled = true);
+
+
+                    // Aplica classe correta ou incorreta no container
+                    if (isCorrect) {
+                        answerContainer.classList.add("correta");
+                        correctlyAnsweredQuestions++;
                     } else {
-                        quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões.</p>`;
+                        answerContainer.classList.add("incorreta");
                     }
+
+                    // Mostra visualmente a correta também
+                    questionContainer.querySelectorAll(".answer-container").forEach(container => {
+                        const label = container.querySelector("label");
+                        if (label.textContent === question.correct_answer) {
+                            container.classList.add("correta");
+                        }
+                    });
+
+                    // esperar ~1 segundo após responder a questão
+                    setTimeout(() => {
+                        quizContainer.classList.add("question")
+                        // veja se ainda tem questões para responder
+                        if (currentQuestionIndex < data.questions.length) {
+                            showQuestion(currentQuestionIndex); // passa para a próxima questão
+                        } else if (correctlyAnsweredQuestions <= 0) {
+                            quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
+                        } else if (correctlyAnsweredQuestions = 1) {
+                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questão de ${data.questions.length}.</p>`;
+                        } else {
+                            quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou ${correctlyAnsweredQuestions} questões de ${data.questions.length}.</p>`;
+                        }
+                    }, 900);
                 });
 
                 answerContainer.appendChild(radio);

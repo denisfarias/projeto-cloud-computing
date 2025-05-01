@@ -3,9 +3,9 @@
         {
             "label": "Quem inventou a fórmula de e=mc²?",
             "incorrect_answers": [
-                "Kendrick Lamar",
-                "BROCKHAMPTON a melhor boyband do mundo",
-                "Young Thug"
+                "Aristóteles",
+                "Thomas Edison",
+                "Stephen Hawking"
             ],
             "correct_answer": "Albert Einstein"
         },
@@ -26,6 +26,13 @@
                 "Rosa"
             ],
             "correct_answer": "Azul"
+        },
+        {
+            "label": "Você gosta de quizes?",
+            "incorrect_answers": [
+                "Não"
+            ],
+            "correct_answer": "Sim"
         }
     ]
 }
