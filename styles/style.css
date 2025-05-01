@@ -1,23 +1,15 @@
 /* PEX computação em nuvem */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-<<<<<<< HEAD
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
 :root{
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #0080FF;
-    --cor-hover: #002345;
-=======
-:root {
   --cor-primaria: #000000;
   --cor-secundaria: #F6F6F6;
   --cor-terciaria: #0080FF;
   --cor-hover: #002345;
->>>>>>> 69580920206119ddf9b84320d79e0ff923afcf14
 
   --fonte-primaria: "Krona One", serif;
   --fonte-secundaria: "Montserrat", serif;
