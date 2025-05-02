@@ -1,6 +1,10 @@
 /* PEX computação em nuvem */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -24,11 +28,12 @@ a, a:visited, a:hover, a:active {
 body{
     background-image: url("/assets/Wallpaper.jpg");
     background-size: cover; 
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     color: var(--cor-secundaria);
+    background-attachment: fixed;
 }
 
 /* animação ícone casa */
@@ -125,37 +130,14 @@ body{
     color: var(--cor-terciaria);
 }
 
-.quiz{
-    color: var(--cor-terciaria);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.quiz span {
-    position: relative; 
-    display: inline-block;
-}
-
-.quiz span::after{
-    content: "";
-    background-color: var(--cor-terciaria);
-    height: 3px;
-    width: 0%;
-    display: block;
-    transition: 0.3s;
-    margin: 0 auto;
-}
-
-.quiz span:hover::after{
-    width: 100%;
-}
-
 .apresentacao{
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: left;
     text-align: left;
+    color: var(--cor-secundaria);
+
 }
 
 .descricao{
@@ -171,12 +153,6 @@ body{
     font-family: var(--fonte-primaria);
     margin-top: 40px;
     line-height: 2;
-}
-
-.apresentacao_conteudo_paragrafo{
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    margin-top: 35px;
 }
 
 .botao {
@@ -228,7 +204,230 @@ body{
 /* Fim da animação botão scroll */
     
     
-    
+/* Parte do conteúdo */
+
+.curva {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-secundaria);
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.texto_content {
+
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 60px 15%;
+    font-family: var(--fonte-secundaria);
+}
+
+.title_content{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 40px;    
+}
+
+.content_linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.apresentacao_content{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    width: 45%;
+    text-align: left;
+}
+
+.imagem_content-1 {
+    width: 50%;
+    object-fit: cover;
+    flex-wrap: wrap;
+  }
+
+.apresentacao_content_2{
+    font-family: var(--fonte-secundaria);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
 
 
+/* CARDS AZURE, AWS E GOOGLE CLOUD */
+
+section.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+section.card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.card__content {
+    color: var(--cor-primaria);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(242, 242, 242);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: var(--cor-primaria);
+    line-height: 1.4;
+    font-family: var(--fonte-secundaria);
+}
+
+.info{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--fonte-primaria);
+}
+
+.info span {
+    position: relative; 
+    display: inline-block;
+}
+
+.info span::after{
+    content: "";
+    background-color: var(--cor-terciaria);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.info span:hover::after{
+    width: 100%;
+}
+
+.card:hover .card__image {
+    opacity: 0.5;
+}
+
+.card__title_aws {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+}
+
+.card__description_aws {
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: var(--cor-primaria);
+    line-height: 1.4;
+    font-family: var(--fonte-secundaria);
+}
+
+.card__title_gcp {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+}
+
+.card__description_gcp {
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: var(--cor-primaria);
+    line-height: 1.4;
+    font-family: var(--fonte-secundaria);
+}
+
+
+/* CONTINUAÇÃO CONTEÚDO */
+
+.continuacao_content{
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-secundaria);
+    flex-wrap: wrap;
+}
