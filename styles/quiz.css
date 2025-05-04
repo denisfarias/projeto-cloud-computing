@@ -89,3 +89,7 @@ body {
     color: var(--cor-incorreta);
     background-color: rgba(235, 37, 37, 0.3);
 }
+
+strong {
+    color: var(--cor-terciaria)
+}
