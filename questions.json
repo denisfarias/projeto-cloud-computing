@@ -1,38 +1,404 @@
 {
     "questions": [
         {
-            "label": "Quem inventou a fórmula de e=mc²?",
+            "label": "Qual serviço de armazenamento na AWS é um armazenamento de objetos altamente escalável?",
             "incorrect_answers": [
-                "Aristóteles",
-                "Thomas Edison",
-                "Stephen Hawking"
+                "EBS (Elastic Block Store)",
+                "RDS (Relational Database Service)",
+                "EFS (Elastic File System)"
             ],
-            "correct_answer": "Albert Einstein"
+            "correct_answer": "S3 (Simple Storage Service)"
         },
         {
-            "label": "1+1=?",
+            "label": "IA e ML na nuvem estão impulsionando a necessidade de menos ferramentas de gerenciamento de nuvem.",
             "incorrect_answers": [
-                "6",
-                "3",
-                "98"
+                "Verdadeiro"
             ],
-            "correct_answer": "2"
+            "correct_answer": "Falso"
         },
         {
-            "label": "Qual a cor do céu?",
+            "label": "Qual certificação demonstra o compromisso de um provedor de nuvem com a segurança da informação?",
             "incorrect_answers": [
-                "Vermelho",
-                "Verde",
-                "Rosa"
+                "LGPD",
+                "GDPR",
+                "SOC 2 Tipo 1"
             ],
-            "correct_answer": "Azul"
+            "correct_answer": "ISO 27001"
         },
         {
-            "label": "Você gosta de quizes?",
+            "label": "Ferramentas de migração de nuvem geralmente não auxiliam na transferência de bancos de dados.",
             "incorrect_answers": [
-                "Não"
+                "Verdadeiro"
             ],
-            "correct_answer": "Sim"
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual modelo de implementação de nuvem combina infraestruturas privada e pública?",
+            "incorrect_answers": [
+                "Nuvem Privada",
+                "Nuvem Pública",
+                "Nuvem Comunitária"
+            ],
+            "correct_answer": "Nuvem Híbrida"
+        },
+        {
+            "label": "A elasticidade na nuvem significa que os recursos são sempre fixos e não podem ser alterados dinamicamente.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual dos seguintes é um risco potencial da computação em nuvem?",
+            "incorrect_answers": [
+                "Escalabilidade ilimitada",
+                "Redução total dos custos de TI",
+                "Aumento da segurança dos dados"
+            ],
+            "correct_answer": "Dependência de um único provedor"
+        },
+        {
+            "label": "A computação em nuvem não é adequada para aplicações de streaming de vídeo devido à alta latência.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual serviço do Google Cloud Platform é uma plataforma de machine learning de ponta a ponta?",
+            "incorrect_answers": [
+                "BigQuery",
+                "Compute Engine",
+                "Cloud Storage"
+            ],
+            "correct_answer": "Vertex AI"
+        },
+        {
+            "label": "Multicloud é uma estratégia que envolve o uso de serviços de um único provedor de nuvem para evitar complexidade.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual componente de segurança na nuvem controla o tráfego de rede de entrada e saída?",
+            "incorrect_answers": [
+                "Criptografia",
+                "IAM",
+                "Certificado SSL"
+            ],
+            "correct_answer": "Firewall"
+        },
+        {
+            "label": "Um planejamento bem-sucedido de migração para a nuvem não precisa considerar os custos.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual modelo de serviço de nuvem é mais adequado para usuários finais que acessam aplicativos pela internet?",
+            "incorrect_answers": [
+                "IaaS",
+                "PaaS",
+                "FaaS"
+            ],
+            "correct_answer": "SaaS"
+        },
+        {
+            "label": "Em um modelo de nuvem comunitária, a infraestrutura é compartilhada por organizações com interesses similares.",
+            "incorrect_answers": [
+                "Falso"
+            ],
+            "correct_answer": "Verdadeiro"
+        },
+        {
+            "label": "Qual benefício da nuvem está diretamente relacionado à capacidade de pagar apenas pelos recursos utilizados?",
+            "incorrect_answers": [
+                "Flexibilidade",
+                "Escalabilidade",
+                "Confiabilidade"
+            ],
+            "correct_answer": "Redução de custos"
+        },
+        {
+            "label": "A latência da rede nunca é um problema em aplicações executadas na nuvem.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual serviço da Microsoft Azure é uma plataforma de análise de dados e data warehousing?",
+            "incorrect_answers": [
+                "Azure VMs",
+                "Azure Blob Storage",
+                "Azure Functions"
+            ],
+            "correct_answer": "Azure Synapse Analytics"
+        },
+        {
+            "label": "A automação na nuvem pode levar a uma menor eficiência operacional.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual prática de segurança envolve a codificação de dados para protegê-los contra acesso não autorizado?",
+            "incorrect_answers": [
+                "Controle de acesso",
+                "Auditoria",
+                "Firewalls"
+            ],
+            "correct_answer": "Criptografia"
+        },
+        {
+            "label": "A estratégia de migração \"refatoração\" geralmente requer menos tempo e esforço do que \"lift-and-shift\".",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual conceito fundamental da nuvem descreve a entrega de serviços de computação pela internet?",
+            "incorrect_answers": [
+                "On-premises",
+                "Datacenter",
+                "Virtualização"
+            ],
+            "correct_answer": "Cloud Computing"
+        },
+        {
+            "label": "Uma nuvem privada é sempre hospedada na infraestrutura física da própria empresa.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual característica da nuvem permite ajustar os recursos de TI rapidamente para atender a picos de demanda?",
+            "incorrect_answers": [
+                "Flexibilidade",
+                "Confiabilidade",
+                "Segurança"
+            ],
+            "correct_answer": "Elasticidade"
+        },
+        {
+            "label": "A responsabilidade pela segurança dos dados na nuvem é inteiramente do provedor.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual caso de uso comum da nuvem envolve a criação de ambientes para testar novas versões de software?",
+            "incorrect_answers": [
+                "Armazenamento e backup",
+                "Big data e análise",
+                "Streaming e jogos"
+            ],
+            "correct_answer": "Desenvolvimento e teste de apps"
+        },
+        {
+            "label": "A conformidade com regulamentações como GDPR e LGPD não é uma preocupação na computação em nuvem.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual serviço de rede na AWS permite criar redes virtuais isoladas?",
+            "incorrect_answers": [
+                "CloudFront",
+                "Route 53",
+                "Elastic Load Balancing"
+            ],
+            "correct_answer": "VPC"
+        },
+        {
+            "label": "A implementação de uma estratégia multicloud simplifica a gestão de recursos.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual componente de segurança gerencia as identidades e o acesso aos recursos da nuvem?",
+            "incorrect_answers": [
+                "Criptografia",
+                "Firewall",
+                "Certificado Digital"
+            ],
+            "correct_answer": "IAM"
+        },
+        {
+            "label": "A principal vantagem da estratégia \"lift-and-shift\" é a otimização de custos e desempenho na nuvem.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual modelo de serviço de nuvem oferece a menor quantidade de controle sobre a infraestrutura subjacente para o usuário?",
+            "incorrect_answers": [
+                "IaaS",
+                "PaaS",
+                "CaaS"
+            ],
+            "correct_answer": "SaaS"
+        },
+        {
+            "label": "Uma nuvem híbrida permite a portabilidade de dados e aplicações entre ambientes de nuvem diferentes.",
+            "incorrect_answers": [
+                "Falso"
+            ],
+            "correct_answer": "Verdadeiro"
+        },
+        {
+            "label": "Qual dos seguintes NÃO é geralmente considerado um benefício primário da computação em nuvem?",
+            "incorrect_answers": [
+                "Escalabilidade global",
+                "Redução da necessidade de equipe de TI interna",
+                "Pagamento conforme o uso"
+            ],
+            "correct_answer": "Controle físico direto sobre os servidores"
+        },
+        {
+            "label": "Custos ocultos raramente são um problema na gestão financeira da nuvem.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual caso de uso da nuvem envolve o processamento de grandes volumes de dados para obter insights?",
+            "incorrect_answers": [
+                "Armazenamento e backup",
+                "Desenvolvimento e teste de apps",
+                "Streaming e jogos"
+            ],
+            "correct_answer": "Big data e análise"
+        },
+        {
+            "label": "A proximidade geográfica dos data centers de um provedor de nuvem não afeta a latência.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual serviço de computação serverless da AWS permite executar código sem provisionar ou gerenciar servidores?",
+            "incorrect_answers": [
+                "EC2",
+                "ECS",
+                "S3"
+            ],
+            "correct_answer": "Lambda"
+        },
+        {
+            "label": "Ferramentas de gerenciamento multicloud visam simplificar a operação em diferentes ambientes de nuvem.",
+            "incorrect_answers": [
+                "Falso"
+            ],
+            "correct_answer": "Verdadeiro"
+        },
+        {
+            "label": "Qual das seguintes certificações é focada em controles de segurança para provedores de serviços?",
+            "incorrect_answers": [
+                "LGPD",
+                "GDPR",
+                "ISO 27001"
+            ],
+            "correct_answer": "SOC 2"
+        },
+        {
+            "label": "A principal dificuldade na migração para a nuvem é geralmente a falta de ferramentas adequadas.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual dos seguintes é um dos três principais provedores de nuvem mencionados?",
+            "incorrect_answers": [
+                "IBM Cloud",
+                "Oracle Cloud Infrastructure",
+                "Alibaba Cloud"
+            ],
+            "correct_answer": "Amazon Web Services (AWS)"
+        },
+        {
+            "label": "A precificação dos serviços de nuvem é geralmente um custo fixo mensal, independentemente do uso.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual serviço de nuvem se enquadra na categoria de Infraestrutura como Serviço (IaaS)?",
+            "incorrect_answers": [
+                "Microsoft Office 365",
+                "Google Workspace",
+                "Salesforce"
+            ],
+            "correct_answer": "Amazon EC2"
+        },
+        {
+            "label": "Edge computing visa aumentar a latência no processamento de dados.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual o nome da lei brasileira de proteção de dados que impacta a segurança na nuvem?",
+            "incorrect_answers": [
+                "ISO 27001",
+                "GDPR",
+                "SOC 2"
+            ],
+            "correct_answer": "LGPD"
+        },
+        {
+            "label": "A estratégia de migração \"lift-and-shift\" envolve a completa rearquitetura de uma aplicação para a nuvem.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual modelo de serviço de nuvem oferece uma plataforma completa para construir e executar aplicações sem gerenciar a infraestrutura subjacente?",
+            "incorrect_answers": [
+                "IaaS",
+                "CaaS",
+                "SaaS"
+            ],
+            "correct_answer": "PaaS"
+        },
+        {
+            "label": "Em um modelo de nuvem pública, a infraestrutura é dedicada a uma única organização.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
+        },
+        {
+            "label": "Qual dos seguintes benefícios é uma característica fundamental da computação em nuvem?",
+            "incorrect_answers": [
+                "Custos iniciais elevados com compra de hardware",
+                "Necessidade de grande espaço físico para servidores",
+                "Controle total e exclusivo sobre a infraestrutura física"
+            ],
+            "correct_answer": "Escalabilidade sob demanda"
+        },
+        {
+            "label": "A segurança na nuvem é de responsabilidade exclusiva do provedor de serviços.",
+            "incorrect_answers": [
+                "Verdadeiro"
+            ],
+            "correct_answer": "Falso"
         }
     ]
 }

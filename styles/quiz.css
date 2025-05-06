@@ -34,10 +34,11 @@ body {
 .question p {
     font-family: var(--fonte-primaria);
     color: var(--cor-secundaria);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: -1rem;
 }
 
 .question .answer-container {
@@ -87,4 +88,8 @@ body {
     border: 2px solid var(--cor-incorreta) !important;
     color: var(--cor-incorreta);
     background-color: rgba(235, 37, 37, 0.3);
+}
+
+strong {
+    color: var(--cor-terciaria)
 }
