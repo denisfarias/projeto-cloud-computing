@@ -1,0 +1,93 @@
+<!-- PEX computação em nuvem -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" type="text/css" href="./styles/sbnos.css" media="screen" />
+</head>
+<!-- Corpo do site -->
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho_home" href="index.html"><img src="./assets/icons8-casa-30.png" alt="icone de casa"></a>
+        <!-- Área de navegação -->
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_link" href="quiz.html">QUIZ</a>
+            <a class="cabecalho_link" href="saiba.html">SAIBA MAIS</a>
+        </nav>
+    </header>
+    <main>
+        <section class="encontre">
+          <h1 class="titulo-encontre">Encontre-nos</h1>
+      
+          <div class="integrantes">
+            <div class="integrante">
+              <img src="assets/igor.jpg" alt="Integrante 1">
+              <h3>IGOR SIQUEIRA</h3>
+              <div class="botoes">
+                <a class="botoes_link" href="https://www.linkedin.com/in/igor-siqueira-300b202ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                    <img src="./assets/linkedin.png" alt="icone github">LinkedIn
+                </a>
+                <a class="botoes_link" href="https://github.com/igorsique">
+                    <img src="./assets/github.png" alt="icone linkedin">GitHub
+                </a>
+              </div>
+            </div>
+      
+            <div class="integrante">
+              <img src="assets/denis.jpg" alt="Integrante 2">
+              <h3>DENIS FARIAS</h3>
+              <div class="botoes">
+                <a class="botoes_link" href="https://www.linkedin.com/in/denis-farias-it/">
+                    <img src="./assets/linkedin.png" alt="icone github">LinkedIn
+                </a>
+                <a class="botoes_link" href="https://github.com/denisfarias">
+                    <img src="./assets/github.png" alt="icone linkedin">GitHub
+                </a>
+              </div>
+            </div>
+      
+            <div class="integrante">
+              <img src="assets/vini.jpg" alt="Integrante 3">
+              <h3 class="nome-vini">VINICIUS DE SOUZA</h3>
+              <div class="botoes">
+                <a class="botoes_link" href="http://www.linkedin.com/in/vinicius-de-souza-gonçalves-vitorino-8a4554327">
+                    <img src="./assets/linkedin.png" alt="icone github">LinkedIn
+                </a>
+                <a class="botoes_link" href="http://github.com/deceptionfalls">
+                    <img src="./assets/github.png" alt="icone linkedin">GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+            
+   
+    <footer class="rodape">
+        <div>
+            <p class="autores">Desenvolvido por <strong class="nomes">Denis, Vinicius e Igor </strong></p>
+        </div>
+    </footer>
+    <script>
+        function animateEncontre() {
+            const descricao = document.querySelector(".encontre");
+            if (descricao) {
+                descricao.classList.remove("show");
+                void descricao.offsetWidth;
+                setTimeout(() => {
+                    descricao.classList.add("show");
+                }, 100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", animateEncontre);
+
+        window.addEventListener("pageshow", animateEncontre);
+    </script>
+</body>
+
+</html>

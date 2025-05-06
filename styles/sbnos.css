@@ -1,0 +1,308 @@
+/* PEX computação em nuvem */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* SLIDE */
+
+.encontre {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.encontre.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* SLIDE */
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+:root{
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #0080FF;
+  --cor-hover: #002345;
+
+  --fonte-primaria: "Krona One", serif;
+  --fonte-secundaria: "Montserrat", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("/assets/Wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: var(--cor-primaria);
+  box-sizing: border-box;
+  color: var(--cor-secundaria);
+}
+
+
+/* animação ícone casa */
+
+.cabecalho_home {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.cabecalho_home::after {
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cabecalho_home:hover::after {
+  width: 100%;
+}
+
+.cabecalho_home img {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+}
+
+/* FIM DA ANIMAÇÃO ÍCONE CASA */
+
+.cabecalho_link::after {
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.cabecalho_link:hover::after {
+  width: 100%;
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cabecalho {
+  display: flex;
+  padding: 2% 10%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho_menu {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+  /* padding-right: 100px; */
+}
+
+.cabecalho_link {
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  justify-content: end;
+}
+
+
+body {
+  /* height: 100vh; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+  color: var(--cor-terciaria);
+}
+
+.quiz {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.quiz span {
+  position: relative;
+  display: inline-block;
+}
+
+.quiz span::after {
+  content: "";
+  background-color: var(--cor-terciaria);
+  height: 3px;
+  width: 0%;
+  display: block;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.quiz span:hover::after {
+  width: 100%;
+}
+
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.descricao {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fonte-primaria);
+}
+
+.texto_content {
+
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 60px 15%;
+    font-family: var(--fonte-secundaria);
+}
+
+.title_content_2{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+
+/* RODAPÉ */
+
+.rodape {
+  margin-top: 77px;
+  padding: 10px;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+}
+
+/* SOBRE NOS */
+
+.encontre {
+    text-align: center;
+    color: var(--cor-secundaria);
+  }
+  
+  .titulo-encontre {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+    margin-bottom: 40px;
+    color: var(--cor-secundaria);
+  }
+  
+  .integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+  }
+  
+  .integrante {
+    text-align: center;
+    max-width: 220px; 
+}
+
+  
+  .integrante img {
+    width: 200px; 
+    height: 200px;      
+    object-fit: cover;  
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+  
+  .integrante h3 {
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 10px;
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    white-space: normal;        
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    
+  }
+
+  .nome-vini {
+    margin-left: -15px; 
+  }
+  
+
+.botoes {
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;                 
+    width: 100%;             
+    justify-content: center;   
+}
+
+.botoes_link {
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    gap: 8px;                  
+    width: 100%;              
+    padding: 3px 0;    
+    margin-top: 10px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 15px;
+    font-size: 1.5rem;      
+    font-weight: 600;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    transition: all 0.3s ease; 
+}
+
+
+.botoes_link img {
+    width: 30px;      
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.botoes_link:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.05);    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+}

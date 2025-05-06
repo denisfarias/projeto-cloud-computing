@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Teste</title>
+    <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
 </head>
 <!-- Corpo do site -->
@@ -16,7 +16,7 @@
         <!-- Área de navegação -->
         <nav class="cabecalho_menu">
             <a class="cabecalho_link" href="quiz.html">QUIZ</a>
-            <a class="cabecalho_link" href="index.html">SOBRE NÓS</a>
+            <a class="cabecalho_link" href="sbnos.html">SOBRE NÓS</a>
         </nav>
     </header>
     <main class="apresentacao">
@@ -57,6 +57,22 @@
             <p class="autores">Desenvolvido por <strong class="nomes">Denis, Vinicius e Igor </strong></p>
         </div>
     </footer>
+    <script>
+        function animateDescricao() {
+            const descricao = document.querySelector(".descricao");
+            if (descricao) {
+                descricao.classList.remove("show");
+                void descricao.offsetWidth;
+                setTimeout(() => {
+                    descricao.classList.add("show");
+                }, 100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", animateDescricao);
+
+        window.addEventListener("pageshow", animateDescricao);
+    </script>
 </body>
 
 </html>

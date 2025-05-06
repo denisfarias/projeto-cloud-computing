@@ -1,6 +1,21 @@
 /* PEX computação em nuvem */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* SLIDE */
+
+.descricao {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.descricao.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* SLIDE */
+
 html {
     scroll-behavior: smooth;
   }
@@ -26,7 +41,7 @@ a, a:visited, a:hover, a:active {
 }
 
 body{
-    background-image: url("/assets/Wallpaper.jpg");
+    background-image: url("/assets/nuuvem1.jpg");
     background-size: cover; 
     background-position: top;
     background-repeat: no-repeat;
@@ -129,6 +144,42 @@ body{
 .titulo-destaque{
     color: var(--cor-terciaria);
 }
+.titulo-destaque_1{
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-riscos{
+    color: #ff0000;
+}
+
+.aws_texto{
+    color: #FF9900;
+}
+
+.azure_texto{
+    color: var(--cor-terciaria);
+}
+
+.google_texto_1{
+    color: #4285F4;
+}
+.google_texto_2{
+    color: #EA4335;
+}
+.google_texto_3{
+    color: #FBBC05;
+}
+.google_texto_4{
+    color: #4285F4;
+}
+.google_texto_5{
+    color: #34A853;
+}
+.google_texto_6{
+    color: #EA4335;
+}
+
 
 .apresentacao{
     padding: 5% 15%;
@@ -175,7 +226,7 @@ body{
     transform: rotate(180deg);
     display: flex;
     justify-content: center;
-
+    scroll-margin-top: 100px;
 
 }
   
@@ -189,12 +240,12 @@ body{
     transform: scale(-1.2);
 }
   
-.button:focus {
+/*.button:focus {
     height: 0px;
     width: 0px;
     padding: 0px;
-    border: 0px;
-}
+    border: 0px;  FAZ O BOTÃO SUMIR DEPOIS QUE CLICA 
+}*/
   
 .button:focus > .svg {
     display: none;
@@ -231,6 +282,31 @@ body{
     margin-bottom: 40px;    
 }
 
+.title_content_2{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.title_content_3{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top: 40px;
+}
+
+.title_riscos{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #ff0000;
+}
+
 .content_linha {
     display: flex;
     justify-content: space-between;
@@ -243,13 +319,77 @@ body{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     width: 45%;
-    text-align: left;
+    text-align: justify;
+    text-indent: 30px;
+    hyphens: auto;
+    text-justify: inter-word;
 }
 
 .imagem_content-1 {
     width: 50%;
     object-fit: cover;
     flex-wrap: wrap;
+    border-radius: 20px;
+  }
+
+.image_imp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.image_imp-1 {
+    width: 75%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+.imagem_content_position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.imagem_content-2 {
+    width: 80%;
+    object-fit: cover;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  .imagem_content_position_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.imagem_content-3 {
+    width: 35%;
+    object-fit: cover;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+.image_security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.image_security_1 {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
 .apresentacao_content_2{
@@ -262,8 +402,87 @@ body{
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
+    text-indent: 30px;
+    hyphens: auto;
+    text-justify: inter-word;
 }
 
+.apresentacao_content_3{
+    font-family: var(--fonte-secundaria);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    hyphens: auto;
+    text-justify: inter-word;
+}
+
+.apresentacao_content_4{
+    font-family: var(--fonte-secundaria);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.lista_ordenada {
+    font-family: var(--fonte-secundaria);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: justify;
+
+    /* REMOVA ESSAS LINHAS */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Itens em coluna (um embaixo do outro) */
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    gap: 20px;
+  }
+  
+
+.div_paragraph{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0;
+    flex-wrap: wrap;
+    hyphens: auto;
+    text-justify: inter-word;
+  }  
+
+  .content_security {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+.apresentacao_content_security{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    width: 45%;
+    text-align: justify;
+    text-indent: 30px;
+    hyphens: auto;
+    text-justify: inter-word;
+}
 
 
 /* CARDS AZURE, AWS E GOOGLE CLOUD */
@@ -306,11 +525,12 @@ section.card {
 .container-cards {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
     background-color: var(--cor-secundaria);
+    gap: 100px;
 }
 
 .card:hover {
@@ -431,3 +651,107 @@ section.card {
     background-color: var(--cor-secundaria);
     flex-wrap: wrap;
 }
+
+/* TABELA DE COMPARAÇÃO */
+
+.tabela-comparacao {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+    font-family: var(--fonte-secundaria);
+    table-layout: fixed;
+  }
+  
+  .tabela-comparacao th,
+  .tabela-comparacao td {
+    border: 1px solid var(--cor-primaria);
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    hyphens: auto;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+  }
+  
+  .tabela-comparacao thead th {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+  }
+
+
+.divisoria {
+    border: none;
+    height: 2px;
+    background-color: #ccc; 
+    margin: 40px 0;
+}
+
+/* ----------------------- Animação do Botão Pagina Inicial -----------------------------*/
+button {
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    background: var(--cor-terciaria);
+    color: white;
+    fill: var(--cor-hover);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: 1000;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: var(--cor-hover);
+  }
+  
+  button:hover .svg-wrapper {
+    transform: scale(1.50);
+    transition: 0.5s linear;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.20em) scale(1.1);
+    fill: #fff;
+  }
+  
+  button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  /* ----------------------------- Término da animação ----------------------------- */
+  
+  .rodape {
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+  }

@@ -1,6 +1,21 @@
 /* PEX computação em nuvem */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* SLIDE */
+
+.descricao {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.descricao.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* SLIDE */
+
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
