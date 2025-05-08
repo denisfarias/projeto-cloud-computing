@@ -315,6 +315,17 @@ body{
     flex-wrap: wrap;
   }
 
+  #meuVideo {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 .apresentacao_content{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
@@ -745,6 +756,16 @@ button {
   }
   /* ----------------------------- Término da animação ----------------------------- */
   
+.linksRef {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+   }
+   
+.linksRef:hover {
+    text-decoration: underline;
+    color: var(--cor-hover);
+   }
+
   .rodape {
     padding: 10px;
     background-color: var(--cor-primaria);
