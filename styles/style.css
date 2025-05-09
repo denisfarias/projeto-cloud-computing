@@ -264,3 +264,7 @@ button:active {
   align-items: center;
 }
 
+.tamanho{
+  transform: scale(0.8);
+  transform-origin: top; 
+}
