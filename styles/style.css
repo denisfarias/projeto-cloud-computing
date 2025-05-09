@@ -264,8 +264,3 @@ button:active {
   align-items: center;
 }
 
-.wrapper {
-  width: 80vw;
-  max-width: 1280px;
-  margin: 0 auto;
-}
