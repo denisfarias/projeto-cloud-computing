@@ -1,3 +1,7 @@
+html{
+    zoom: 0.8;
+  }
+
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
