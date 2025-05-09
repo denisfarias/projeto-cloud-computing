@@ -23,6 +23,7 @@ body {
     background-color: var(--cor-primaria);
     box-sizing: border-box;
     color: var(--cor-secundaria);
+    flex-wrap: wrap;
 }
 
 /* === Quiz === */
