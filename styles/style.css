@@ -268,3 +268,17 @@ button:active {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+
+  .apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .apresentacao_conteudo_titulo {
+    font-size: 2rem; 
+    margin-top:

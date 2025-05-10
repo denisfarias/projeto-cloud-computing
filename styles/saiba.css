@@ -780,3 +780,92 @@ button {
     text-align: center;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+  .content_linha {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content_linha img {
+    width: 100%;
+  }
+
+  .content_linha p {
+    width: 100%;
+  }
+  
+
+  .content_security {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content_security img {
+    width: 100%;
+  }
+
+  .content_security p {
+    width: 100%;
+  }
+
+ /* TABELA */
+
+   .tabela-comparacao, 
+  .tabela-comparacao thead, 
+  .tabela-comparacao tbody, 
+  .tabela-comparacao tr, 
+  .tabela-comparacao td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela-comparacao thead {
+    display: none; 
+  }
+
+  .tabela-comparacao tr {
+    margin-bottom: 30px;
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+  }
+
+  .tabela-comparacao td {
+    border: none;
+    padding: 15px 10px 10px 10px;
+    position: relative;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+  }
+
+  .tabela-comparacao td::before {
+    content: attr(data-label);
+    display: block;
+    background-color: var(--cor-terciaria); 
+    color: var(--cor-secundaria); 
+    font-weight: bold;
+    font-family: var(--fonte-primaria);
+    font-size: 1.4rem;
+    padding: 8px 10px;
+    margin: -15px -10px 10px -10px;
+    border-bottom: 1px solid var(--cor-primaria);
+  }
+  
+  /* LINK */
+
+    .linksRef {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    display: inline-block;
+    word-break: break-all; 
+    font-size: 1.4rem;
+    max-width: 100%;
+  }
+
+  .linksRef:hover {
+    text-decoration: underline;
+    color: var(--cor-hover);
+  }
+ 
+}

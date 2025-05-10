@@ -97,3 +97,43 @@ body {
 strong {
     color: var(--cor-terciaria)
 }
+
+@media (max-width: 768px) {
+
+    .question {
+        margin: 2rem 10px; 
+        max-width: 100%;
+        padding: 0 10px; 
+    }
+
+    .question p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .question .answer-container {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+
+    .question input[type="radio"] {
+        transform: scale(1.2);
+    }
+
+
+    .question label {
+        font-size: 1rem; 
+    }
+
+
+    .question .answer-container:hover {
+        border: 2px solid var(--cor-terciaria);
+        color: var(--cor-terciaria);
+    }
+
+
+    .question .answer-container.correta {
+        background-color: rgba(90,
