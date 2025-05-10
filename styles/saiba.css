@@ -869,3 +869,27 @@ button {
   }
  
 }
+
+/* PRIMEIRA PARTE */
+
+@media (max-width: 768px) {
+  .descricao {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .apresentacao_conteudo_titulo {
+    font-size: 2rem; 
+    line-height: 1.4; 
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apresentacao_conteudo_titulo {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
