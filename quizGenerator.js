@@ -41,20 +41,18 @@ fetch('questions.json')                                         // inicializando
                     const isCorrect = answer === question.correct_answer;
                     console.log(isCorrect);
 
-                    if (isCorrect) { correctlyAnsweredQuestions++; }
-                    currentQuestionIndex++;
-
                     const allInputs = document.querySelectorAll(`input[name='question-${index}']`);
                     allInputs.forEach(input => input.disabled = true);
 
-
                     // Aplica classe correta ou incorreta no container
-                    if (isCorrect) {
+                    if (isCorrect == true) {
                         answerContainer.classList.add("correta");
                         correctlyAnsweredQuestions++;
                     } else {
                         answerContainer.classList.add("incorreta");
                     }
+
+                    currentQuestionIndex++;
 
                     // Mostra visualmente a correta também
                     questionContainer.querySelectorAll(".answer-container").forEach(container => {
@@ -72,7 +70,7 @@ fetch('questions.json')                                         // inicializando
                             showQuestion(currentQuestionIndex); // passa para a próxima questão
                         } else if (correctlyAnsweredQuestions <= 0) {
                             quizContainer.innerHTML = `<p>Fim do quiz, você não acertou nenhuma questão</p>`;
-                        } else if (correctlyAnsweredQuestions = 1) {
+                        } else if (correctlyAnsweredQuestions === 1) {
                             quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou <strong>${correctlyAnsweredQuestions}</strong> questão de <strong>${data.questions.length}</strong>.</p>`;
                         } else {
                             quizContainer.innerHTML = `<p>Parabéns, você completou o Quiz<br>Você acertou <strong>${correctlyAnsweredQuestions}</strong> questões de <strong>${data.questions.length}</strong>.</p>`;
